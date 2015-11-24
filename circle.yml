@@ -1,5 +1,7 @@
-## Customize the test machine
-machine:
+dependencies:
+  override:
+    - exit 0
 
-  timezone:
-    America/Los_Angeles # Set the timezone
+test:
+  override:
+    - exit 0
