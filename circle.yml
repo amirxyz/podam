@@ -1,3 +1,4 @@
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/podam
+    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/podam/ \;
